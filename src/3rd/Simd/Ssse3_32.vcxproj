@@ -15,9 +15,16 @@
     <ProjectGuid>{5153F702-A5FD-440D-917D-FDA213663527}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <ProjectName>Ssse3_32</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="Simd\SimdSsse3AlphaBlending.cpp" />

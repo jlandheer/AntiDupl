@@ -15,9 +15,16 @@
     <ProjectGuid>{310D4930-8048-41A0-87EC-B0987BE24281}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <ProjectName>Sse42_32</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="Simd\SimdSse42Crc32.cpp" />

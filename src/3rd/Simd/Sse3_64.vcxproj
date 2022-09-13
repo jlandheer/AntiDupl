@@ -15,9 +15,16 @@
     <ProjectGuid>{6E200EB5-9F4A-42E8-B54D-EABFAA19F3DB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <ProjectName>Sse3_64</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="Simd\SimdSse3Gemm32f.cpp" />

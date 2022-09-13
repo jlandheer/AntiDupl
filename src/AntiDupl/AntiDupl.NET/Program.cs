@@ -33,7 +33,7 @@ namespace AntiDupl.NET
         [STAThread]
         static void Main(string[] args)
         {
-            if (IsDotNet35Installed)
+            if (true)
             {
                 string customSavePath = null;
                 if (GetParameter(args, "-s", ref customSavePath))
